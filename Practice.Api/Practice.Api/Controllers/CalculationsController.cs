@@ -18,9 +18,9 @@ namespace Practice.Api.Controllers
             _calculator = calculator;
         }
 
-        [Route("authCheck")]
+        [Route("calculateTotalAmount")]
         [HttpPost]
-        public IHttpActionResult CalculateInterest([FromBody] CalculateViewModel model)
+        public IHttpActionResult CalculateTotalAmount([FromBody] CalculateViewModel model)
         {
             if (_headerAuthenticator.KeyIsValid(Request))
                 if (ModelState.IsValid)
