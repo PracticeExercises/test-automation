@@ -6,6 +6,7 @@ namespace Practice.Api.Controllers
     public class HealthController : ApiController
     {
         [Route("health")]
+        [HttpGet]
         public string CheckHealth() => "OK";
     }
 }
